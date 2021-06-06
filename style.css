@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+
+
+/* Navbar */
+nav {
+    display: flex;
+    background-color: rgb(111, 0, 255);
+    justify-content: space-around;
+    padding: 20px 0;
+    color: white;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 2em;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    color: rgb(208, 177, 248);
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8em;
+}
+
+nav ul li a:hover {
+    color: white;
+    cursor: pointer;
+}
+
+
+/* hamburger menu */
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    height: 15px;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 2px;
+    background-color: rgb(208, 177, 248);
+    border-radius: 100px;
+
+}
+
+/* Responsive Breakpoint */
+
+/* Ukuran tablets */
+@media screen and (max-width: 768px) {
+    nav ul {
+        width: 50%
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .menu-toggle {
+        display: none;
+    }
+
+}
+
+/* ukuran Mobile */
+@media screen and (max-width: 576px) {
+    nav ul {
+        display: none;
+    }
+}
+
+/* body */
+
+#title {
+    font-size: 3em;
+    padding: 15px 0;
+    padding-bottom: 0;
+    margin: 0;
+}
+
+#sub-title {
+    font-weight: 1000;
+    font-family: 'Nunito', sans-serif;
+}
+
+#img-div {
+    padding: 10px;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+}
+
+#img-caption {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 0.8em;
+}
+
+#tribute-info {
+
+    padding: 0 25px;
+    margin: 0;
+}
+
+#tribute-link {
+    text-decoration: none;
+    cursor: pointer;
+    font-style: italic;
+}
+
+#tribute-link :hover {
+    color: rgb(208, 177, 248);
+}
+
+#video {
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#video-ustadz {
+    padding: 10px 0;
+    margin: 5px 0;
+
+}
+
+#contact {
+    margin-top: 25px;
+    background-color: rgb(74, 0, 172);
+}
+
+#contact h2 {
+    color: white;
+    padding: 10px 0;
+}
+
+#list-contact {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+#list-contact li {
+    color: white;
+    padding-bottom: 20px;
+    font-size: 2em;
+    margin: 3px 20px;
+}
+
+#list-contact li:hover {
+    cursor: pointer;
+    color: rgb(197, 197, 197);
+}
